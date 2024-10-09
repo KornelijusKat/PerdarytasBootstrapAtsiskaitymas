@@ -1,0 +1,319 @@
+body,html{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+}
+.header-containter{
+    height:100%;
+    width:100%;
+    z-index: 2;
+}
+header{
+    background-image: url("/img/985cabb6920eaaeecfea44bd6b5ef5d8.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom:10%;
+}
+header .navbar{
+    z-index:2;
+    font-family: "Manrope", sans-serif;
+}
+header .customA{
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    line-height:20px;
+    font-weight: 700;
+    color:#0000;
+}
+.navbar-collapse{
+    position: absolute;
+    top:100%;
+    left:0;
+    width:20%;
+    z-index:10;
+}
+@media(min-width:768px){
+    .navbar-collapse{
+        position:static;
+    }
+}
+header .loginlink a{
+    background-color: #F84646;
+    border: solid #F84646;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size:1rem;
+    color:#FFFFFF;
+}
+header .header-content{
+    text-align: center;
+    z-index:1;
+    padding-top: 10%;
+    padding-bottom:15%;
+    font-family: "Manrope", sans-serif;
+}
+header .header-content article h1{
+    margin-bottom:20px;
+    font-size:42px;
+    font-weight:800;
+    line-height: 57.5px;
+}
+header .header-content article p{
+    margin-bottom:20px;
+    font-weight: 400;
+    font-size:12px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+}
+header .form-input{
+    border: none;
+}
+header .btn{
+    background-color: #F84646;
+    border-radius: 8px;
+    padding:0px;
+    width: 90.76px;
+    height: 50.01px;
+    color:#FFFFFF;
+}
+header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 67%;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index:1;
+}
+@media(min-width:768px){
+    header .overlay{
+        display: none;
+    }
+}
+.first-section{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-family: "Manrope", sans-serif;
+}
+.container .top-firstSection h2{
+    font-size: 24px;
+    line-height: 32.78px;
+    font-weight: 800;
+    text-align: center;
+}
+.container .top-firstSection p{
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+.first-section .row{
+    text-align: center;
+}
+.first-section .row article{
+    padding-bottom: 15%;
+}
+.first-section .row h2{
+    font-size: 24px;
+    line-height: 32.78px;
+    font-weight: 800;
+}
+.first-section .row p{
+    font-size:18px;
+    line-height: 28px;
+    font-weight:400;
+    letter-spacing: 0.2px;
+}
+.midredblock{
+    background-color:#F84646;
+    height:836px;
+    color: #FFFFFF;
+    text-align: center;
+}
+@media(min-width:768px){
+    .midredblock{
+       height:100%;
+    
+    }
+    .midredblock img{
+        transform: rotate(270deg);
+    }
+}
+.midredblock h2{
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size:2.25rem;
+    line-height: 47px;
+}
+@media(min-width:768px){
+    .midredblock h2{
+        font-size:3rem;
+        line-height:64px;
+    }
+}
+.midredblock .top-midredblock{
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 32px;
+}
+.midredblock .col-xs-2 p{
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 24.59px;
+}
+@media(min-width:768px){
+    .midredblock .col-md-2 p{
+        font-size:0.875rem;
+        line-height:21.5px;
+    }
+}
+.third-section{
+    padding-top:15%;
+}
+.third-section .row{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.third-section{
+    font-family: "Manrope", sans-serif;
+}
+.third-section .article-con{
+    display: flex;;
+    flex-direction: column;
+    align-items: stretch;      
+}
+.imageHolder {
+    flex: 0 0 auto; 
+    width: 100%; 
+    justify-self: center;
+}
+.imageHolder img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+.third-section article{
+    flex: 0 1 auto;
+}
+.third-section h2{
+    font-size:36px;
+    font-weight:700;
+    line-height:41.5px;
+    color: #2E2E2E;
+
+}
+.third-section p{
+    font-weight:400;
+    font-size:14px;
+    line-height:28.5px;
+}
+.third-section a{
+    display:inline-block;
+    background-color: #F84646;
+    width:100%;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size:1rem;
+    color:#FFFFFF;
+}
+.fourth-section{
+    background-color: #F4F5F7;
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+}
+.fourth-section h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height:41.5px;
+}
+.fourth-section p{
+    color:#18191F;
+    font-size: 14px;
+    line-height: 32px;
+}
+.fifth-section{
+   padding: 10% 5%;
+}
+.users-con article h2{
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+@media(min-width:768px){
+    .users-con article h2{
+        font-size:3rem ;     
+    }
+}
+.users-con article p{
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 25px;
+}
+.user-link{
+    background-color: #F84646;
+    border-radius: 5px;
+    width: 124px;
+    height:42px;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size:1rem;
+    color:#FFFFFF;
+}
+@media(min-width:768px){
+    .user-link{
+        border-radius:8px;
+        gap:10px;
+        padding:25px 40px 25px 40px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color:#F4F5F7;
+        width:fit-content;
+        height:fit-content;
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+    }
+}
+footer{
+    padding-top: 10%;
+    width:100%;
+    background-color: #F8464A;
+}
+footer ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom:60px;
+
+}
+footer ul li{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 32px;
+}
+footer ul li a{
+    text-decoration: none;
+    color:#E6E6E6;
+}
+footer ul li:nth-child(1) a{
+    font-weight: 700;
+    line-height: 24px;
+    color:#FFFFFF;
+}
+footer p{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+
+}
