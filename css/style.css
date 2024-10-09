@@ -13,7 +13,31 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5%;
-    padding-bottom:10%;
+    padding-bottom:5%;
+}
+header:before{
+    content: ''; 
+    position: absolute;  
+    top: 0;              
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-size: cover; 
+    opacity: 0.4; 
+    z-index: 1; 
+    pointer-events: none; 
+}
+@media(min-width:768px){
+    header::before{
+        display: none;
+    }
+}
+@media(min-width:1200px){
+    header{
+        padding-bottom:5%;
+    }
+    
 }
 header .navbar{
     z-index:2;
@@ -24,7 +48,7 @@ header .customA{
     font-size: 14px;
     line-height:20px;
     font-weight: 700;
-    color:#0000;
+    color:#18191F;
 }
 .navbar-collapse{
     position: absolute;
@@ -61,6 +85,19 @@ header .header-content article h1{
     font-weight:800;
     line-height: 57.5px;
 }
+@media(min-width:720px){
+    header .header-content article h1{
+    font-size: 3.5rem;
+    text-align: left;
+    
+    }
+}
+@media(min-width:1200px){
+    header .header-content article h1{
+        font-size:64px;
+    }
+}
+
 header .header-content article p{
     margin-bottom:20px;
     font-weight: 400;
@@ -68,8 +105,25 @@ header .header-content article p{
     line-height: 23px;
     letter-spacing: 0.2px;
 }
+@media(min-width:720px){
+    header .header-content article p{
+        font-size:1rem;
+        text-align: left;
+    }
+}
+@media(min-width:1200px){
+    header .header-content article p{
+        font-size:20px;
+        text-align: left;
+    }
+}
 header .form-input{
     border: none;
+}
+@media(min-width:760px){
+    header .form-control{
+        width:500px;
+    }
 }
 header .btn{
     background-color: #F84646;
@@ -79,12 +133,17 @@ header .btn{
     height: 50.01px;
     color:#FFFFFF;
 }
+@media(min-width:760px){
+    header .btn{
+        margin-left: 120px;
+    }
+}
 header .overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 67%;
+    height: 60%;
     background-color: rgba(255, 255, 255, 0.4);
     z-index:1;
 }
@@ -97,12 +156,25 @@ header .overlay{
     padding-top: 20%;
     padding-bottom: 20%;
     font-family: "Manrope", sans-serif;
+}@media(min-width:768px){
+    .first-section{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+}
+.first-section .row{
+    padding-top: 10%;
 }
 .container .top-firstSection h2{
     font-size: 24px;
     line-height: 32.78px;
     font-weight: 800;
     text-align: center;
+}
+@media(min-width:720px){
+    .container .top-firstSection h2{
+        font-size: 2.25rem;
+    }
 }
 .container .top-firstSection p{
     font-size: 12px;
@@ -111,11 +183,74 @@ header .overlay{
     font-weight: 400;
     text-align: center;
 }
+@media(min-width:720px){
+    .container .top-firstSection p{
+        font-size: 1.5rem;
+        line-height: 39.5px;
+    }
+}
 .first-section .row{
     text-align: center;
 }
 .first-section .row article{
     padding-bottom: 15%;
+}
+.imgCon{
+   height:100px;
+}
+.specialdiv{
+    position: relative;
+    margin: auto;
+    width:60px;
+    height:100px;
+}
+.specialdiv2{
+    position: relative;
+    margin: auto;
+    width:120px;
+    height:120px;
+}
+.ball1{
+    position:absolute;
+    opacity: 0.8;
+    top: -5px;
+    left:1;
+}
+.ball2{
+    position:absolute;
+    opacity: 0.8;
+    top: 10px;
+    left:0;
+}
+.ball3{
+    position:absolute;
+    opacity: 0.8;
+    top: 0px;
+}
+
+.ball4{
+    position:absolute;
+    opacity: 0.8;
+    top: 0px;
+    left:0;
+}
+
+.ball5{
+    position:absolute;
+    opacity: 0.8;
+    top:-20px;
+}
+.ball6{
+    position:absolute;
+    opacity: 0.8;
+    top: 0px;
+    right:30px
+}
+.ball7{
+    position:absolute;
+    opacity: 0.8;
+    top:10px;
+    right:8px;
 }
 .first-section .row h2{
     font-size: 24px;
@@ -130,17 +265,38 @@ header .overlay{
 }
 .midredblock{
     background-color:#F84646;
+    position: relative;
     height:836px;
     color: #FFFFFF;
     text-align: center;
 }
+.midredblock::before {
+    content: ''; 
+    position: absolute;  
+    top: 0;              
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("/svg/image 1.svg") no-repeat; 
+    background-size: cover; 
+    opacity: 0.4; 
+    z-index: 1; 
+    pointer-events: none; 
+}
 @media(min-width:768px){
     .midredblock{
        height:100%;
-    
+       padding-top: 5%;
+       padding-bottom: 5%;
     }
     .midredblock img{
         transform: rotate(270deg);
+    }
+}
+@media(min-width:1200px){
+    .midredblock{
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 .midredblock h2{
@@ -161,6 +317,12 @@ header .overlay{
     font-size: 0.875rem;
     line-height: 32px;
 }
+@media(min-width:768px){
+    .midredblock .top-midredblock{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
 .midredblock .col-xs-2 p{
     font-family: "Manrope", sans-serif;
     font-weight: 700;
@@ -171,6 +333,11 @@ header .overlay{
     .midredblock .col-md-2 p{
         font-size:0.875rem;
         line-height:21.5px;
+    }
+}
+@media(min-width:1200px){
+    .midredblock .col-md-2 p{
+        font-size: 18px;
     }
 }
 .third-section{
@@ -184,34 +351,87 @@ header .overlay{
     font-family: "Manrope", sans-serif;
 }
 .third-section .article-con{
-    display: flex;;
-    flex-direction: column;
+    display: flex;
+    flex-direction:column;
     align-items: stretch;      
+}
+@media(min-width:768px){
+    .third-section .article-con{
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;    
+        height: auto;
+    }
 }
 .imageHolder {
     flex: 0 0 auto; 
     width: 100%; 
-    justify-self: center;
 }
-.imageHolder img {
-    width: 100%; 
+@media(min-width:768px){
+    .imageHolder{
+        width: 30%;
+        display: flex;
+    }
+}
+
+.imageHolder img { 
+    width:100%;
     height: auto; 
-    display: block; 
+}
+@media(min-width:768px){
+    .imageHolder img{
+        
+        height:auto;
+        max-height:100%;
+    }
 }
 .third-section article{
-    flex: 0 1 auto;
+    flex:0  1 auto;
+}
+@media(min-width:768px){
+   .third-section article{
+        flex:1 1 1;
+        flex-direction: column;
+        justify-content: space-between;
+        width:30%;
+        height:100%
+    }
+}
+@media(min-width:1200px){
+    .third-section article{
+         display: block;
+         justify-content: space-around;
+         width:40%;
+         height:100%;
+         text-align: left;
+     }
+ }
+@media(min-width:1200px){
+    .third-section .second{
+        content:url('/svg/Hackerman.svg');
+    }
 }
 .third-section h2{
     font-size:36px;
     font-weight:700;
     line-height:41.5px;
     color: #2E2E2E;
-
+}
+@media(min-width:768px){
+    .third-section h2{
+        font-size:58px;
+    }
+}
+@media(min-width:1200px){
+    .third-section h2{
+        font-size:64px;
+    }
 }
 .third-section p{
     font-weight:400;
     font-size:14px;
     line-height:28.5px;
+    
 }
 .third-section a{
     display:inline-block;
@@ -224,20 +444,60 @@ header .overlay{
     font-size:1rem;
     color:#FFFFFF;
 }
+@media(min-width:768px){
+    .third-section a{
+        width: 30%;
+    }
+    
+}
 .fourth-section{
     background-color: #F4F5F7;
     font-family: "Manrope", sans-serif;
     text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .fourth-section h2{
     font-weight: 700;
     font-size: 36px;
     line-height:41.5px;
+    color:#18191F;
+}
+@media(min-width:768px){
+    .fourth-section h2{
+        font-size: 48px;
+    }
 }
 .fourth-section p{
     color:#18191F;
     font-size: 14px;
     line-height: 32px;
+}
+.fourth-section .textLogo{
+    color: #F84646;
+    font-size: 16px;
+    line-height: 32px;
+    margin:auto;
+    width: 170px;
+    height:96px;
+    align-content: center;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+.logoRefBlock .imgDiv{
+    margin:auto;
+    width: 170px;
+    height:96px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    margin-bottom:24px;
+}
+@media(min-width:768px){
+    .fourth-section p{
+        font-size: 18px;
+    }
 }
 .fifth-section{
    padding: 10% 5%;
@@ -315,5 +575,4 @@ footer p{
     margin-bottom: 50px;
     font-weight: 400;
     font-family: "Inter", sans-serif;
-
 }
