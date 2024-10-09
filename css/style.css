@@ -9,7 +9,7 @@ body,html{
     z-index: 2;
 }
 header{
-    background-image: url("/img/985cabb6920eaaeecfea44bd6b5ef5d8.png");
+    background-image: url("../img/985cabb6920eaaeecfea44bd6b5ef5d8.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5%;
@@ -18,15 +18,15 @@ header{
 header:before{
     content: ''; 
     position: absolute;  
+    height:50%;
     top: 0;              
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 1);
     background-size: cover; 
-    opacity: 0.4; 
+    opacity: 0.5; 
     z-index: 1; 
-    pointer-events: none; 
 }
 @media(min-width:768px){
     header::before{
@@ -138,22 +138,13 @@ header .btn{
         margin-left: 120px;
     }
 }
-header .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60%;
-    background-color: rgba(255, 255, 255, 0.4);
-    z-index:1;
-}
 @media(min-width:768px){
     header .overlay{
         display: none;
     }
 }
 .first-section{
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 20%;
     font-family: "Manrope", sans-serif;
 }@media(min-width:768px){
@@ -277,11 +268,10 @@ header .overlay{
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("/svg/image 1.svg") no-repeat; 
+    background: url("../svg/image 1.svg") no-repeat; 
     background-size: cover; 
     opacity: 0.4; 
     z-index: 1; 
-    pointer-events: none; 
 }
 @media(min-width:768px){
     .midredblock{
@@ -304,6 +294,8 @@ header .overlay{
     font-weight: 800;
     font-size:2.25rem;
     line-height: 47px;
+    z-index:3;
+    position: relative;
 }
 @media(min-width:768px){
     .midredblock h2{
@@ -316,6 +308,8 @@ header .overlay{
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 32px;
+    position: relative;
+    z-index: 3;
 }
 @media(min-width:768px){
     .midredblock .top-midredblock{
@@ -328,6 +322,8 @@ header .overlay{
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 24.59px;
+    position: relative;
+    z-index:2
 }
 @media(min-width:768px){
     .midredblock .col-md-2 p{
@@ -408,7 +404,7 @@ header .overlay{
  }
 @media(min-width:1200px){
     .third-section .second{
-        content:url('/svg/Hackerman.svg');
+        content:url('../svg/Hackerman.svg');
     }
 }
 .third-section h2{
